@@ -69,7 +69,7 @@ func GetQuery(filepath string) string {
 }
 
 func GetMigrationFile(command string, version int) string {
-	matches, err := filepath.Glob("migrations/" + strconv.Itoa(version) + "*/" + "*-" + command + ".sql")
+	matches, err := filepath.Glob("migrations/" + strconv.Itoa(version) + "*/" + "*_" + command + ".sql")
 
 	if err != nil {
 		log.Fatal(errors.Join(ErrNoMigrationFile, err))
