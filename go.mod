@@ -1,4 +1,4 @@
-module pg-migrate
+module github.com/yatoogamii/pg-migrate
 
 go 1.24.2
 
